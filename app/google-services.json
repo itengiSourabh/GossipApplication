@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "659392389240",
+    "project_id": "gossipapp-ce7ff",
+    "storage_bucket": "gossipapp-ce7ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659392389240:android:c90b57b707483ee71ecd8d",
+        "android_client_info": {
+          "package_name": "com.Kratos.gossipapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659392389240-m004480rrvqnttsu0evrsoco0lcolhc9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMghOjsLpU14qnnHBct0uuGtHTq03m8Qc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659392389240-m004480rrvqnttsu0evrsoco0lcolhc9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
