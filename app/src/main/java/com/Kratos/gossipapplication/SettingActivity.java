@@ -127,7 +127,7 @@ public class SettingActivity extends AppCompatActivity {
                     }
                     else
                     {
-                        Toast.makeText(SettingActivity.this,task.getException().getMessage(),Toast.LENGTH_SHORT).show();
+
                     }
 
                 }
