@@ -40,6 +40,7 @@ public class SettingActivity extends AppCompatActivity {
         binding = ActivitySettingBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        getSupportActionBar().hide();
 
         storage = FirebaseStorage.getInstance();
         auth = FirebaseAuth.getInstance();
