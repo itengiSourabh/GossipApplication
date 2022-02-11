@@ -87,6 +87,11 @@ public class ChatDetailActivity extends AppCompatActivity {
         binding.send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(binding.etMessage.getText().toString().isEmpty()){
+                    binding.etMessage.setError("Kindly type a message");
+                    return;
+                }
+
                 String message = binding.etMessage.getText().toString();
                 final MessageModel model = new MessageModel(senderId,message);
                 model.setTimestamp(new Date().getTime());
