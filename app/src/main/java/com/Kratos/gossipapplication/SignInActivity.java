@@ -58,6 +58,14 @@ public class SignInActivity extends AppCompatActivity {
         binding.btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(binding.etEmail.getText().toString().isEmpty()){
+                    binding.etEmail.setError("Please Enter your email");
+                    return;
+                }
+                if(binding.etPassword.getText().toString().isEmpty()){
+                    binding.etPassword.setError("Please Enter your password");
+                    return;
+                }
                 progressDialog.show();
                 auth.signInWithEmailAndPassword(binding.etEmail.getText().toString(),binding.etPassword.getText().toString())
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
