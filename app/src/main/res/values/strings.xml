@@ -2,5 +2,6 @@
     <string name="app_name">GossipApplication</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_web_client" translatable="false">659392389240-m004480rrvqnttsu0evrsoco0lcolhc9.apps.googleusercontent.com</string>
 
 </resources>
