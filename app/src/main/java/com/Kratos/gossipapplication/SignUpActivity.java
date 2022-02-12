@@ -41,6 +41,19 @@ public class SignUpActivity extends AppCompatActivity {
         binding.btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(binding.etUserName.getText().toString().isEmpty()){
+                    binding.etUserName.setError("Please Enter your User Name");
+                    return;
+                }
+                if(binding.etEmail.getText().toString().isEmpty()){
+                    binding.etEmail.setError("Please Enter your email");
+                    return;
+                }
+                if(binding.etPassword.getText().toString().isEmpty()){
+                    binding.etPassword.setError("Please Enter your password");
+                    return;
+                }
+
                 progressDialog.show();
                 auth.createUserWithEmailAndPassword
                         (binding.etEmail.getText().toString(),binding.etPassword.getText().toString())

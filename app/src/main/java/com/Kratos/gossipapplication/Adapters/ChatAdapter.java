@@ -93,11 +93,16 @@ public class ChatAdapter extends RecyclerView.Adapter{
 
         if(holder.getClass() == SenderViewHolder.class){
             ((SenderViewHolder)holder).senderMsg.setText(messageModel.getMessage());
+            ((SenderViewHolder)holder).senderTime.setText(messageModel.LastSeenTimeConvert(messageModel.getTimestamp()));
+
+
             //todo set time of message
 
         }
         else {
             ((ReceiverViewHolder)holder).receiverMsg.setText(messageModel.getMessage());
+            ((ReceiverViewHolder)holder).receiverTime.setText(messageModel.LastSeenTimeConvert(messageModel.getTimestamp()));
+
 
         }
     }
@@ -123,7 +128,7 @@ public class ChatAdapter extends RecyclerView.Adapter{
         public SenderViewHolder(@NonNull View itemView) {
             super(itemView);
             senderMsg = itemView.findViewById(R.id.senderText);
-            senderTime = itemView.findViewById(R.id.reciverTime);
+            senderTime = itemView.findViewById(R.id.senderTime);
         }
     }
 }

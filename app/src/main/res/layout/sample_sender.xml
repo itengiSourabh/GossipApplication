@@ -36,9 +36,9 @@
             android:layout_marginBottom="3dp"
             android:inputType="textLongMessage|textMultiLine"
             android:maxWidth="270dp"
-            android:minWidth="50dp"
 
-            android:text="hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+            android:minWidth="50dp"
+            android:text="sender msg"
             app:layout_constraintBottom_toTopOf="@+id/senderTime"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
             app:layout_constraintStart_toStartOf="parent"
@@ -50,13 +50,15 @@
             android:id="@+id/senderTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
+            android:layout_marginStart="15dp"
             android:layout_marginEnd="4dp"
             android:layout_marginBottom="4dp"
-
             android:text="12:00pm"
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline2" />
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
